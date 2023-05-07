@@ -25,8 +25,8 @@ paths:
       parameters:
         - name: tags
           in: query
-          description: tags to filter by
-          required: false
+          description: tags to filter by!
+          required: true
           style: form
           schema:
             type: array
@@ -38,7 +38,7 @@ paths:
           required: false
           schema:
             type: integer
-            format: int32
+            format: int64
       responses:
         '200':
           description: pet response
